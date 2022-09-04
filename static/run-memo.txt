@@ -1,4 +1,4 @@
-#
+# celery -A flower --broker=redis://localhost:6379  --port=5555
 
 # ■djangoアプリケーションの実行
 # $python manage.py makemigrations # migrationファイルを作成（必要なら

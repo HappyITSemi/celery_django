@@ -1,1 +1,43 @@
 [04/Sep/2022 21:53:21] INFO [django.utils.autoreload:677] Watching for file changes with StatReloader
+[04/Sep/2022 22:14:14] INFO [django.utils.autoreload:266] /Users/nakashima-toshio/codecommit/celery_django/celery_django/settings.py changed, reloading.
+[04/Sep/2022 22:14:15] INFO [django.utils.autoreload:677] Watching for file changes with StatReloader
+[04/Sep/2022 22:14:38] INFO [django.server:187] "GET /task_1 HTTP/1.1" 202 33
+[04/Sep/2022 22:16:51] INFO [django.server:187] "GET /task_2 HTTP/1.1" 202 22
+[04/Sep/2022 22:18:21] INFO [django.utils.autoreload:266] /Users/nakashima-toshio/codecommit/celery_django/celery_django/settings.py changed, reloading.
+[04/Sep/2022 22:18:22] INFO [django.utils.autoreload:677] Watching for file changes with StatReloader
+[04/Sep/2022 22:20:24] INFO [django.server:187] "GET /task_2 HTTP/1.1" 202 22
+[04/Sep/2022 22:20:24] INFO [django:29] sam_exec ---
+[04/Sep/2022 22:20:46] INFO [django.server:187] "GET /task_2 HTTP/1.1" 202 22
+[04/Sep/2022 22:20:46] INFO [django:29] sam_exec ---
+[04/Sep/2022 22:35:26] INFO [django.server:187] "GET /task_1 HTTP/1.1" 202 33
+[04/Sep/2022 22:35:26] INFO [django:13] tel_exec ---
+[04/Sep/2022 22:35:26] INFO [django:21] mail_exec ---
+[04/Sep/2022 22:35:26] INFO [django:29] sam_exec ---
+[04/Sep/2022 22:36:11] INFO [django.server:187] "GET /task_1 HTTP/1.1" 202 33
+[04/Sep/2022 22:36:11] INFO [django:21] mail_exec ---
+[04/Sep/2022 22:36:11] INFO [django:13] tel_exec ---
+[04/Sep/2022 22:36:11] INFO [django:29] sam_exec ---
+[04/Sep/2022 22:41:42] WARNING [django.request:241] Not Found: /
+[04/Sep/2022 22:41:42] WARNING [django.server:187] "GET / HTTP/1.1" 404 2402
+[04/Sep/2022 22:42:44] WARNING [django.request:241] Not Found: /
+[04/Sep/2022 22:42:44] WARNING [django.server:187] "GET / HTTP/1.1" 404 2402
+[04/Sep/2022 22:42:45] INFO [django.server:187] "GET /task_1 HTTP/1.1" 202 33
+[04/Sep/2022 22:42:45] INFO [django:13] tel_exec ---
+[04/Sep/2022 22:42:45] INFO [django:21] mail_exec ---
+[04/Sep/2022 22:42:45] INFO [django:29] sam_exec ---
+[04/Sep/2022 22:42:46] WARNING [django.request:241] Not Found: /
+[04/Sep/2022 22:42:46] WARNING [django.server:187] "GET / HTTP/1.1" 404 2402
+[04/Sep/2022 22:42:48] WARNING [django.request:241] Not Found: /
+[04/Sep/2022 22:42:48] WARNING [django.server:187] "GET / HTTP/1.1" 404 2402
+[04/Sep/2022 22:45:37] INFO [django.server:187] "GET /task_1 HTTP/1.1" 202 33
+[04/Sep/2022 22:45:37] INFO [django:13] tel_exec ---
+[04/Sep/2022 22:45:37] INFO [django:21] mail_exec ---
+[04/Sep/2022 22:45:37] INFO [django:29] sam_exec ---
+[04/Sep/2022 22:46:43] INFO [django.server:187] "GET /task_1 HTTP/1.1" 202 33
+[04/Sep/2022 22:46:43] INFO [django:21] mail_exec ---
+[04/Sep/2022 22:46:43] INFO [django:13] tel_exec ---
+[04/Sep/2022 22:46:43] INFO [django:29] sam_exec ---
+[04/Sep/2022 22:51:11] INFO [django.server:187] "GET /task_1 HTTP/1.1" 202 33
+[04/Sep/2022 22:51:11] INFO [django:21] mail_exec ---
+[04/Sep/2022 22:51:11] INFO [django:13] tel_exec ---
+[04/Sep/2022 22:51:11] INFO [django:29] sam_exec ---

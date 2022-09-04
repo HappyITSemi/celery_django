@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from celery import shared_task
 import logging
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('django')
 
 
 @shared_task
