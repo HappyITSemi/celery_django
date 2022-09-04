@@ -4,10 +4,13 @@ from django.http import HttpResponse
 from celery import shared_task
 import logging
 
+logger = logging.getLogger(__name__)
+
 
 @shared_task
 def tel_exec(message):  # 裏側で実行される処理
     print('tel_exec ---')
+    logger.info('tel_exec ---')
     time.sleep(1)  # 1秒待機する
     print(message)
 
@@ -15,6 +18,7 @@ def tel_exec(message):  # 裏側で実行される処理
 @shared_task
 def mail_exec(message):
     print('mail_exec ---')
+    logger.info('mail_exec ---')
     time.sleep(1)
     print(message)
 
@@ -22,6 +26,7 @@ def mail_exec(message):
 @shared_task
 def sam_exec(message):
     print('sam_exec ---')
+    logger.info('sam_exec ---')
     time.sleep(1)
     print(message)
 
@@ -33,10 +38,10 @@ def task_1(request):  # 本処理
     tel_exec.delay(msg_tel)
     mail_exec.delay(msg_mail)
     sam_exec.delay(msg_sam)
-    return HttpResponse('パイプ--> workerへ --->3 task')
+    return HttpResponse('パイプ--> workerへ --->3 task', status=202)
 
 
 def task_2(request):
-    msg_2 = '1-1非同期処理-->sam'
+    msg_2 = '1-1パイプに入れる-->sam'
     sam_exec.delay(msg_2)
-    return HttpResponse('裏側に処理を投げます--->only sam', status=202)
+    return HttpResponse('パイプ --->only sam', status=202)

@@ -1,20 +1,18 @@
 #
-立ち上げ
 
-■djangoアプリケーションの実行
-$python manage.py makemigrations # migrationファイルを作成（必要なら
-$python manage.py migrate # migrate実行
-$python manage.py runserver # アプリケーション実行
+# ■djangoアプリケーションの実行
+# $python manage.py makemigrations # migrationファイルを作成（必要なら
+# $python manage.py migrate # migrate実行
 
-■redis立ち上げ
-# redis-server
 
-■celery立ち上げ
-manage.pyがあるディレクトリにcdして以下コマンドを実行
+# $ python manage.py runserver # アプリケーション実行
+# $ redis-server  # ■redis立ち上げ
+# $ celery -A celery_django worker -l info  # ■celery立ち上げ
 
-$celery -A celery_django worker --concurrency=1 -l info
 
-フロントからタスクが発生⇒
+# manage.pyがあるディレクトリにcdして以下コマンドを実行
+# $celery -A celery_django worker --concurrency=1 -l info
 
-RedisがそのタスクをCeleryに渡す⇒
-Celeryがタスクを実行
+# フロントからタスクが発生⇒
+# RedisがそのタスクをCeleryに渡す⇒
+# Celeryがタスクを実行
