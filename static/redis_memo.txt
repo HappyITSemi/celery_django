@@ -1,0 +1,31 @@
+■インストール、検証
+brew info redis
+brew install redis
+
+redis-cli --version
+redis-server --version
+
+■Redis サーバーの起動
+・バックグラウンドサービスとして起動したい場合 (自動起動を有効にする)
+brew services start redis
+brew services stop redis
+brew services restart redis
+
+redis-cli
+127.0.0.1:6379>shutdown
+
+
+・単発で起動する場合
+$ redis-server /usr/local/etc/redis.conf
+
+■Redis サーバーの停止
+$ redis-cli shutdown
+127.0.0.1:6379> shutdown
+
+■インストールされたファイル
+ファイル	                    説明
+/usr/local/etc/redis.conf	Redis の動作を設定する設定ファイル
+/usr/local/bin/redis-cli	Redis クライアントへのショートカット
+/usr/local/bin/redis-server	Redis サーバーへのショートカット
+/usr/local/Cellar/redis	    インストールした Redis の実体はこちらのディレクトリにインストールされている
+
